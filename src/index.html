@@ -1,0 +1,95 @@
+@@include('./parts/header.html', {
+    "title": "Test project"
+})
+  <body class="page__body">
+
+    <header class="main-header page__header-wrap">
+      <div class="main-header__wrap">
+        <a href="index.html">
+          <img src="images/ease.svg" width="219" height="45" alt="логотип">
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">Collesctions</a></li>
+            <li class="nav__item"><a href="#">blog</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="collection collection__wrap">
+        <div class="collection__descr">
+          <h1 class="visually-hidden">Product description</h1>
+          <p>
+            Collection of lighting is inspired by the geometric works of the great Suprematist artists Kissitzky and Kazimir Malevich.
+          </p>
+          <p>
+            Suprematism is a modernist movement in the art of the early twentieth century,
+             focused on the basic geometric forms, such as circles, squares, lines and rectangles.
+             The geometric structure of the lamps will always look like a small art objects in your house.
+          </p>
+        </div>
+
+        <div class="collection__settings">
+          <div class="collection__border"></div>
+
+          <div class="collection__settings-wrap">
+            <div class="collection__product-descr">
+              <p><span class="collection__text-bold">Material:</span> Copper</p>
+              <p><span class="collection__text-bold">Dimensions (cm):</span> H 33 x W 15 x D 15</p>
+              <p><span class="collection__text-bold">Net Weight:</span> 2,5 kg</p>
+              <p><span class="collection__text-bold">Electrification:</span><br>
+              LED 10W | G9 |  220-240V | 50 Hz
+              </p>
+            </div>
+
+            <img class="collection__lamp" src="images/Lamp-1-big.png" alt="Лампа 1">
+
+            <div class="collection__product-selection">
+
+              <div class="collection__product-wrap">
+                <label class="collection__product-1">
+                  <input class="collection__prod visually-hidden" type="radio" name="lamp" id="lamp-1" value="lamp-1" checked>
+                  <span class="collection__image collection__image-1">
+                    <img class="collection__img-1" src="images/Lamp-5.png" width="34" height="125" alt="Лампа 1">
+                  </span>
+                </label>
+
+                <label class="collection__product-1">
+                  <input class="collection__prod visually-hidden" type="radio" name="lamp" id="lamp-2" value="lamp-2" >
+                  <span class="collection__image collection__image-2">
+                    <img class="collection__img-2" src="images/Lamp-2.png" width="40" height="126" alt="Лампа 2">
+                  </span>
+                </label>
+
+                <label class="collection__product-1">
+                  <input class="collection__prod visually-hidden" type="radio" name="lamp" id="lamp-3" value="lamp-3">
+                  <span class="collection__image collection__image-3">
+                    <img class="collection__img-3" src="images/Lamp-3.png" width="72" height="105" alt="Лампа 3">
+                  </span>
+                </label>
+              </div>
+
+              <div class="collection__theme-buttons">
+                <button class="collection__light-theme collection__light-theme--color"><span class="visually-hidden">Светлая тема</span></button>
+                <button class="collection__dark-theme collection__dark-theme--color"><span class="visually-hidden">Темная тема</span></button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="collection__result">
+          <img class="collection__img" src="images/collection-1.jpg" width="867" height="1087" alt="Коллекция 1">
+          <img class="collection__lamp-middle" src="images/lamp-1-middle.png" alt="Лампа на фоне комнаты">
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.min.js"></script>
+
+  </body>
+</html>

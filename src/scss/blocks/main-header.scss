@@ -1,0 +1,7 @@
+.main-header__wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1540px;
+
+  @include wrapper-desktop();
+}

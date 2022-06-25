@@ -1,0 +1,21 @@
+.nav__list {
+  @include clear-list();
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  a {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: $font-first;
+    color: $nav-text;
+    text-decoration: none;
+    font-weight: 400;
+  }
+}

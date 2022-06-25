@@ -1,0 +1,21 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-first;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 32.12px;
+  color: $basic-black;
+  background-color: $background;
+  padding-top: 27px;
+
+  min-height: 100%;
+}
+
+.page__header-wrap {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,12 @@
+@import "global/normalize.css";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/page.scss";
+@import "global/visually-hidden.scss";
+// Mixins
+@import "global/mixins/clear-list.scss";
+@import "global/mixins/wrapper-desktop.scss";
+// blocks
+@import "blocks/nav.scss";
+@import "blocks/main-header.scss";
+@import "blocks/collection.scss";

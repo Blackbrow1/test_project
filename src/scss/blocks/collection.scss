@@ -1,0 +1,262 @@
+.collection {
+  display: grid;
+  grid-template-columns: 672px 862px;
+  grid-template-rows: 450px auto;
+}
+
+.collection__img {
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.collection__result {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  position: relative;
+}
+
+.collection__settings {
+  position: relative;
+}
+
+.collection__border {
+  width: 703px;
+  height: 1px;
+  background-color: $section-border;
+  position: absolute;
+  top: 0;
+  left: -36px;
+}
+
+.collection__wrap {
+  @include wrapper-desktop();
+}
+
+.collection__descr {
+  width: 599px;
+  padding-top: 62px;
+
+  p {
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
+}
+
+.collection__settings-wrap {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.collection__product-descr {
+  font-size: 16px;
+  padding-top: 140px;
+  padding-left: 10px;
+
+  &::before {
+    content: "";
+    width: 462px;
+    height: 450px;
+    position: absolute;
+    top: 20px;
+    left: -85px;
+    background-color: $round;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  p {
+    line-height: 158%;
+    letter-spacing: 1px;
+  }
+}
+
+.collection__text-bold {
+  font-weight: 400;
+}
+
+.collection__product-selection {
+  width: 167px;
+  height: 554px;
+  background-color: $background-choice;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+  top: 41px;
+  box-sizing: border-box;
+}
+
+.collection__product-wrap {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.collection__image  {
+  display: block;
+  width: 133px;
+  height: 131px;
+  border-radius: 14px;
+  position: relative;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:not(:nth-child(3)) {
+    margin-bottom: 20px;
+  }
+
+  .collection__img-1 {
+    position: absolute;
+    top: 0;
+    left: 45px;
+  }
+
+  .collection__img-2 {
+    position: absolute;
+    top: 0;
+    left: 44px;
+  }
+
+  .collection__img-3 {
+    position: absolute;
+    top: 0;
+    left: 25px;
+  }
+}
+
+.collection__prod:checked + .collection__image {
+  background-color: $button-active;
+}
+
+.collection__lamp {
+  position: absolute;
+  left: 265px;
+  top: 0;
+}
+
+.collection__light-theme,
+.collection__dark-theme {
+  width: 84px;
+  height: 76px;
+  border: none;
+}
+
+.collection__light-theme {
+  border-bottom-left-radius: 14px;
+  background: url('../images/light.svg') $btn-light-theme no-repeat 50% 50%;
+}
+
+.collection__dark-theme {
+  background: url('../images/dark.svg') $btn-dark-theme no-repeat 54% 47%;
+}
+
+.collection__theme-buttons {
+  display: flex;
+  position: relative;
+  top: 5px;
+}
+
+.collection__lamp-middle {
+  position: absolute;
+  top: 0;
+  left: 218px;
+}
+
+
+// .collection__image {
+//   width: 133px;
+//   height: 131px;
+//   background-color: red;
+// }
+
+
+// .collection__product-1 {
+//   position: relative;
+
+//   span {
+//     width: 133px;
+//     height: 131px;
+//   }
+// }
+
+// .collection__prod1 {
+//   &:checked + span {
+//     &::before {
+//       content: "";
+//       position: absolute;
+//       left: 19px;
+//       top: 39px;
+//       width: 133px;
+//       height: 131px;
+//       background-color: $button-active;
+//       border-radius: 14px;
+//     }
+//   }
+// }
+
+// .collection__prod1 + span {
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     left: 63px;
+//     top: 41px;
+//     width: 133px;
+//     height: 131px;
+//     background: url("../images/Lamp-5.png") no-repeat;
+//   }
+// }
+
+// .collection__prod2 {
+//   &:checked + span {
+//     &::before {
+//       content: "";
+//       position: absolute;
+//       left: 20px;
+//       top: 188px;
+//       width: 133px;
+//       height: 131px;
+//       background-color: $button-active;
+//       border-radius: 14px;
+//     }
+//   }
+// }
+
+// .collection__prod2 + span {
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     left: 24px;
+//     top: 190px;
+//     width: 133px;
+//     height: 131px;
+//     background: url("../images/Lamp-2.png") no-repeat 40px 0;
+//   }
+// }
+
+// .collection__prod3 {
+//   &:checked + span {
+//     &::before {
+//       content: "";
+//       position: absolute;
+//       left: 19px;
+//       top: 341px;
+//       width: 133px;
+//       height: 131px;
+//       background-color: $button-active;
+//       border-radius: 14px;
+//     }
+//   }
+// }
+
+// .collection__prod3 + span {
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     left: 7px;
+//     top: 340px;
+//     width: 133px;
+//     height: 131px;
+//     background: url("../images/Lamp-3.png") no-repeat 40px 0;
+//   }
+// }
